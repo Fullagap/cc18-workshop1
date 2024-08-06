@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    max-width: 1200px; 
+    margin: auto;
+}
+
+header {
+    height: 11%;
+    background-color: skyblue;
+    color: white;
+}
+
+.branding h1 {
+    color: white;
+}
+
+h1 > :nth-child(1) , h1 > :nth-child(2) {
+    color: deeppink;
+}
+
+.branding {
+    /* background-color: aquamarine; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+header .container {
+    background-color: skyblue;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: brown;  */
+    align-items: flex-end;
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li {
+    border-radius: 5%;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5%;
+  }
+
+  li a:hover {
+    background-color: deeppink;
+  }
+
+  header .current {
+    background-color: aliceblue;
+    color: blue;
+}
+
+.showcase {
+    height: 35%; 
+    background-image: url("https://picsum.photos/id/2/1500/500/?blur=4");
+    color: white;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.showcase .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.showcase .container h1 {
+    font-size: 55px;
+}
+
+.showcase .container p {
+    font-size: 20px;
+    color: tomato;
+    padding-inline: 30%;
+}
+.newsletter {
+    padding: 10px 0px;
+    background-color: aquamarine;
+}
+
+.newsletter .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.newsletter .container h1 {
+    color: orangered;
+}
+
+.button1 {
+    background-color:orangered;
+    font-size: 20px;
+    padding: 4px 8px ;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s;
+}
+
+.newsletter input[type=email] {
+    width: 250px;
+    font-size: 20px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.boxes {
+    background-color: skyblue;
+    padding-bottom: 0;
+}
+
+.boxes .container {
+    display: flex;
+    padding: 10px 10px 0 10px;
+}
+
+.boxes .container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 5%;
+    padding-bottom: 0;
+}
+
+.box img {
+    height: 50%;
+}
+
+.box p , .box h3 {
+    font-size: 20px;
+    padding: 10px 0 0 0 ;
+}
+
+footer {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    color: white;
+    height: 5%;
+    align-items: center;
+}
+
+@media(max-width: 800px) {
+
+    header .container {
+        /* background-color: pink; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsletter .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box img {
+        height: 40%;
+    }
+
+    .box p , .box h3 {
+        font-size: 15px;
+    }
+
+    .boxes .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
